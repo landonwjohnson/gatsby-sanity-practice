@@ -6,6 +6,7 @@ export const NavStyles = styled.nav`
         transform: translateY(-25%);
     }
     ul{
+
         margin: 0;
         padding: 0;
         display: grid;
@@ -14,6 +15,7 @@ export const NavStyles = styled.nav`
         list-style: none;
         grid-gap: 2rem;
         align-items: center;
+        margin-top: -6rem;
     }
 
     li{
@@ -43,6 +45,10 @@ export const NavStyles = styled.nav`
         font-size: 3rem;
         &:hover{
             color: var(--red);
+        }
+
+        &[aria-current='page']{
+            color: var(--red)
         }
     }
 
